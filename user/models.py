@@ -7,6 +7,7 @@ class user(models.Model):
     password = models.CharField(max_length=8)
     balance = models.IntegerField()
     loginscu = models.BooleanField()
+    token = models.CharField(max_length=10)
 
     def __str__(self):
         return self.name +" - "+ self.username
